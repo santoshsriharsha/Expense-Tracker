@@ -1,12 +1,19 @@
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome</h1>
-      <ExpenseItem />
-    </div>
-  );
+  const expenses = [
+    {
+      title: "Books",
+      amount: 500,
+      date: new Date(2022, 3, 10),
+    },
+    {
+      title: "Watch",
+      amount: 10000,
+      date: new Date(2022, 4, 15),
+    },
+  ];
+  return <Expenses expenses={expenses} />;
 }
 
 export default App;
