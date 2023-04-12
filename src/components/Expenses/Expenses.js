@@ -5,7 +5,6 @@ function Expenses(props) {
   const expenses = props.expenses;
   return (
     <div>
-      <h1 id="h1">Welcome</h1>
       <Card className="expenses">
         <ExpenseItem
           title={expenses[0].title}
